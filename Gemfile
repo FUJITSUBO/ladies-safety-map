@@ -46,3 +46,8 @@ end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
+
+# rails new実行時にnet-smtpがインストールされていないというエラーが発生したため追加。ruby3.1でnet-smtpがデフォルトから外されたことが原因。
+gem 'net-smtp'
+gem 'net-imap'
+gem 'net-pop'
